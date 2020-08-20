@@ -1,5 +1,6 @@
-var days= [];
-var 
+var days= ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Saturday"];
+var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
+var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 function formValidation(){
     var month = document.getElementById("myForm").month.value;
     var year = document.getElementById("myForm").year.value;
