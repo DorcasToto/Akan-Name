@@ -27,10 +27,20 @@ function calculateDayofBirth(){
    DD = document.getElementById("date").value;
    //calculate day of the week
    d =  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
-   return(Math.floor(d));
+   return(Math.floor(d));  
+}
+function getGender(){
+    var genders = document.getElementsByName('gender');
+    var gender_value;
+    for(var i = 0; i < genders.length; i++){
+        if(genders[0].checked){
+            gender_value ="female";
+        }
+        if(genders[1].checked){
+            gender_value = "male";
+        }
+    }
 
+    }
 
-
-    
-    
 }
