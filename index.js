@@ -20,7 +20,7 @@ function formValidation(){
      window.alert("please provide a valid day")
   }
 }
-function calculateDayofBirth(){
+var days = function(){
    CC = parseInt(document.getElementById("year").value).substring(0,2);
    YY = parseInt(document.getElementById("year").value).substring(2,4);
    MM = document.getElementById("month").value;
@@ -29,6 +29,7 @@ function calculateDayofBirth(){
    d =  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
    return(Math.floor(d));  
 }
+
 function getGender(){
     var genders = document.getElementsByName('gender');
     var gender_value;
@@ -40,7 +41,32 @@ function getGender(){
             gender_value = "male";
         }
     }
+    switch(gender_value){
+        case "female":
+            if(days==1){
+                alert("You Were you born on"+day[0]+"and your Akhan name is"+femaleNames[0]);
+            }
+            if(days==2){
+                alert("You Were you born on"+day[1]+"and your Akhan name is"+femaleNames[1]);
+            }
+            if(days==3){
+                alert("You Were you born on"+day[2]+"and your Akhan name is"+femaleNames[2]);
+            }
+            if(days==4){
+                alert("You Were you born on"+day[3]+"and your Akhan name is"+femaleNames[3]);
+            }
+            if(days==5){
+                alert("You Were you born on"+day[4]+"and your Akhan name is"+femaleNames[4]);
+            }
+            if(days==6){
+                alert("You Were you born on"+day[5]+"and your Akhan name is"+femaleNames[5]);
+            }
+            if(days==7){
+                alert("You Were you born on"+day[6]+"and your Akhan name is"+femaleNames[6]);
+            }
+           
+    }
 
     }
 
-}
+
