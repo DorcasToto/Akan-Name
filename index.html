@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan Name</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+    <div class="container">
+    <h2>Hey hey..Wanna know your Akan name?</h2>
+    <p>Well, this is a bit of how Akan-names are generated</p>
+    <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.</p>
+        <h3>Males</h3>
+        <ul>
+            <li>Sunday:Kwasi</li>
+            <li>Monday:Kwadwo</li>
+            <li>Tuesday:Kwabena</li>
+            <li>Wednesday:Kwaku</li>
+            <li>Thursday:yaw</li>
+            <li>friday:Kofi</li>
+            <li>Saturday:Kwame</li>
+        </ul>
+        <h3>Female</h3> 
+        <ul>
+            <li>Sunday:Akosua</li>
+            <li>Monday:Adwoa</li>
+            <li>Tuesday:Abenaa</li>
+            <li>Wednesday:Akua</li>
+            <li>Thursday:yaa</li>
+            <li>friday:Afua</li>
+            <li>Saturday:Ama</li>
+        </ul> 
+    <p>Fill in the form to get your Akan name generated</p>    
+    <div>
+        <h2>Akan name </h2>
+        <form onsubmit="formValidation()" id="myForm">
+          <div class="form-group">
+            <label for="year">Year:</label>
+            <input type="number" class="form-control" id="year" placeholder="Enter Year of Birth e.g 1997" name="year" required>
+          </div>
+          <div class="form-group">
+            <label for="month">Month:</label>
+            <input type="number" class="form-control" id="month" placeholder="Enter Month of Birth e.g 5" name="month" required>
+          </div>
+          <div class="form-group">
+            <label for="day">Date:</label>
+            <input type="number" class="form-control" id="date" placeholder="Enter Day of Birth e.g 20" name="date" required>
+          </div>
+          <div class="form-group">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="gender" id="female" checked="checked"> Female
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="gender" id="male"> Male
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Generate Akan name</button>
+        </form>
+      </div>
+    </div>  
+    <script src="index.js"></script>        
+</body>
+</html>
