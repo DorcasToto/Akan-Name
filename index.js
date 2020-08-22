@@ -3,33 +3,32 @@ var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
 var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 
 function formValidation(){
-    var month = document.getElementById("month");
-    var year = document.getElementById("year");
-    var date = document.getElementById("day");
-    var gender = document.getElementsByName("gender");
+    var month = document.getElementById("month").value;
+    var year = document.getElementById("year").value;
+    var date = document.getElementById("date").value;
+    if(month<=0 || month>12){
+        alert("Provide a valid month");
+        document.month.focus();
+          return false;
+      }
+      else if(year<=1900 || year>2100){
+          alert("please provide a valid year");
+          return false;
+      }
+      else if(date<=0 || date>31){
+         alert("please provide a valid date");
+         return false;
+      }
+      else{
+         return true;   
+      }
 
-  if((month<=0) || (month>12) || (month=="")){
-      alert("Provide a valid month");
-      return false;
-  }
-  else if((year=="") ||(year<=1900 || year>2100)){
-      alert("please provide a valid year");
-      return false;
-  }
-  else if((date=="") || (date<=0 || date>31)){
-     alert("please provide a valid day");
-     return false;
-  }
-  else{
-     // return true;
-     alert("Okay");
-  }
 }
 function calculateDayOfBirth(){
   var CC = (document.getElementById("year").value).substring(0,2);
   var YY = (document.getElementById("year").value).substring(2,4);
-  var MM = document.getElementById("month");
-  var DD = document.getElementById("date");
+  var MM = document.getElementById("month").value;
+  var DD = document.getElementById("date").value;
    //calculate day of the week
    d =  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
    return(Math.floor(d));  
