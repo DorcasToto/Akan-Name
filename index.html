@@ -26,10 +26,10 @@
             'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.</p>
         <div class="flex">
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
+                <div class="col-6">
+                    <div class="card border-success" id="card">
                         <div class="card-body">
-                            <h5 class="card-title">Male Names</h5>
+                            <h5 class="card-title" id="title">Male Names</h5>
                             <ul class="card-text">
                                 <li>Sunday:Kwasi</li>
                                 <li>Monday:Kwadwo</li>
@@ -42,10 +42,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="card">
+                <div class="col-6">
+                    <div class="card border-success"id="card">
                         <div class="card-body">
-                            <h5 class="card-title">Female Names</h5>
+                            <h5 class="card-title" id="title">Female Names</h5>
                             <ul class="card-text">
                                 <li>Sunday:Akosua</li>
                                 <li>Monday:Adwoa</li>
@@ -61,24 +61,29 @@
             </div>
 
         </div>
-        <p>Fill in the form to get your Akan name generated</p>
+       
         <div>
-            <h2>Akan name </h2>
-            <form onsubmit="formValidation()" id="myForm">
+             <p id="p">Fill in the form to get your Akan name generated</p>
+            <form onsubmit="formValidation()" id="myForm" class="card p-3 bg-light col-sm-6">
                 <div class="form-group">
-                    <label for="year">Birth Date:</label>
+                    <div class="col-sm-12">
+                        <label for="year">Birth Date:</label>
                     <input type="text" class="form-control" id="dateOfBirth"
                         placeholder="Birth date in the format mm/dd/yyyy" name="year" required>
+
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="gender" id="female" checked="checked"> Female
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="gender" id="male"> Male
-                    </label>
+                <div class="form-group row p-5">
+                    <div class="col-sm-6">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="gender" id="female" checked="checked"> Female
+                        </label>
+                    </div>
+                    <div class="col-sm-6">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="gender" id="male"> Male
+                        </label>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary" onclick="dayOfBirth()">Generate Akan name</button>
             </form>
