@@ -24,5 +24,11 @@ h1{
 .cardtext{
     text-align: center;
 }
-#text{
+#display{
+    text-align: center;
+}
+#display span{
+    color:#D50000;
+    font-weight:500;
+    font-size:20px
 }
