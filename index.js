@@ -21,7 +21,6 @@ function dayOfBirth() {
         case "female":
             if (dayOfBirth == 0) {
                 document.getElementById("display").innerHTML= "You Were you born on" + day[0] + "and your Akhan name is" + femaleNames[0];
-                document.getElementById("display").value.focus();
             }
             if (dayOfBirth == 1) {
                 alert("You Were you born on" + day[1] + "and your Akhan name is" + femaleNames[1]);
