@@ -3,7 +3,6 @@ var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", " Yaa", "Afua", "Ama"];
 
 function dayOfBirth() {
-    var display = document.getElementById("display").innerHTML;
     var birthDate = document.getElementById("dateOfBirth").value;
     var date = new Date(birthDate);
     var dayOfBirth = date.getDay();
@@ -21,7 +20,7 @@ function dayOfBirth() {
     switch (gender_value) {
         case "female":
             if (dayOfBirth == 0) {
-               display = "You Were you born on" + day[0] + "and your Akhan name is" + femaleNames[0];
+                document.getElementById("display").innerHTML= "You Were you born on" + day[0] + "and your Akhan name is" + femaleNames[0];
             }
             if (dayOfBirth == 1) {
                 alert("You Were you born on" + day[1] + "and your Akhan name is" + femaleNames[1]);
