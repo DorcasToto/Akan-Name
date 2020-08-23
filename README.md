@@ -31,7 +31,8 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 - HTML
 - CSS
 - BOOTSTRAP 4.
--JS
+- JS.
+
 
 
 ## [License]
