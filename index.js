@@ -6,6 +6,12 @@ function dayOfBirth() {
     var birthDate = document.getElementById("dateOfBirth").value;
     var date = new Date(birthDate);
     var dayOfBirth = date.getDay();
+    var dateFormat = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/;
+    //validate form
+    if(birthDate == ""|| !(birthDate.match(dateFormat))){
+        alert("Provide a valid date!!");
+    }
+
     //get gender
     var genders = document.getElementsByName('gender');
     var gender_value;
